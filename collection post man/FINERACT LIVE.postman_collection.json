@@ -1,0 +1,1349 @@
+{
+	"info": {
+		"_postman_id": "19931461-e692-4e34-9494-1b026d2f7309",
+		"name": "FINERACT LIVE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1836605"
+	},
+	"item": [
+		{
+			"name": "LIVE",
+			"item": [
+				{
+					"name": "CLIENT",
+					"item": [
+						{
+							"name": "list all clients",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Fineract-Platform-TenantId",
+										"value": "Default",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Basic bWlmb3M6cGFzc3dvcmQ=",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "rejectUnauthorized",
+										"value": "false",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/client",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"client"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create client",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBiOTNiNTEyLWU4Y2UtNDliYS04NGUwLTYwYmU1MGYzMmY0MCIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYzMzk3NDMsImV4cCI6MTY1NjQyNjE0MywiaWF0IjoxNjU2MzM5NzQzLCJqdGkiOiIwNjQ3ODU5ZS1mZDVkLTQxYTAtODY2MS1iNzJiYmMxOGEzZjciLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.YwN4lvckdyWQNZksNUunPRtQYdY5TmkA9Nf_sq44TSN7Dk-buN_uUHP2GlOy3UToXYKs4hspWcY-T8pr4Hw91GKTSczgEUpndcg3V1OSXrhFwUgVtlN_0NIzqyu557ewpmKxh8_V6Ao8cnNkkETFhUHEJpsRBEAqembLrUXjqZN0J9ROaYdCyTPFJaDcP61yBjJQ2IuDYk6NTuZzVdvr8qKSk5OF5hNGNszy7OPVoUL77mE8vm7Gw9kl7JCYD0eGP5Y1QH7M6XWp22SnUTWK6GHIAMVx2SRVYGJinheb2A_99Q5f96bHcBWT7fhlmGZ2qsNtwMEXniMGH5FXrx_u0Q",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "officeId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "firstname",
+											"value": "Shaka",
+											"type": "text"
+										},
+										{
+											"key": "lastname",
+											"value": "Ibrahim",
+											"type": "text"
+										},
+										{
+											"key": "externalId",
+											"value": "llKKLL100",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "true",
+											"type": "text"
+										},
+										{
+											"key": "activationDate",
+											"value": "27 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "submittedOnDate",
+											"value": "27 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "savingsProductId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "datatables",
+											"value": "[{\n        \"registeredTableName\": \"Residency Address\",\n        \"data\": {\n        \"locale\": \"en\",\n        \"Address Line\": \"Basavana Gudi Road\",\n        \"Street\": \"Gandhi Bazaar\",\n        \"Landmark\": \"Aashrama\",\n        \"COUNTRY_cd_Country\": 17,\n        \"STATE_cd_State\": \"7\",\n        \"DISTRICT_cd_District\": \"13\"\n        }\n    }]",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/client",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"client"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add client note",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "client_id",
+											"value": "46",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "SOMETHING TESTING",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/client/add-note",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"client",
+										"add-note"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create client identifier",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "client_id",
+											"value": "73",
+											"type": "text"
+										},
+										{
+											"key": "documentTypeId",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "documentKey",
+											"value": "KA-54677299",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Document has been verified",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/client/add-identifier",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"client",
+										"add-identifier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create client document",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "client_id",
+											"value": "73",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "Test File",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/devel/Pictures/asad.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/client/add-document",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"client",
+										"add-document"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ACCOUNTING",
+					"item": [
+						{
+							"name": "List Provisional Entries",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "aGH6iCQpdY7PLQSrhaX4e2ccDBFB4O5h76pzydSN",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/provision-entries",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"provision-entries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Accounting Closures",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "ji4MGuZpdi16Tg6X1A61i8FF231OKRSg5JOIzL5I",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/accounting-closures",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"accounting-closures"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Journal Entries",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "TfVYJNbAdC78COk92Qquk7KxzCOkaKZ95pgMywFo",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/journal-entries",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"journal-entries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Accounting Rules",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "aGH6iCQpdY7PLQSrhaX4e2ccDBFB4O5h76pzydSN",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/accounting-rules",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"accounting-rules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Ledger Accounts",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "aGH6iCQpdY7PLQSrhaX4e2ccDBFB4O5h76pzydSN",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/general-ledger-accounts",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"general-ledger-accounts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Financial Activities to Accounts Mappings",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "aGH6iCQpdY7PLQSrhaX4e2ccDBFB4O5h76pzydSN",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/accounting/financial-activity-accounts",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"accounting",
+										"financial-activity-accounts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "LOAN",
+					"item": [
+						{
+							"name": "List Loans",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "CznSvxJ2cg348YGFHfQPa8H5QJ8yKrYy7zHCDrRX",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit a new Loan Application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "locale",
+											"value": "en_GB",
+											"type": "text"
+										},
+										{
+											"key": "clientId",
+											"value": "46",
+											"type": "text"
+										},
+										{
+											"key": "productId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "principal",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "loanTermFrequency",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "loanTermFrequencyType",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "loanType",
+											"value": "individual",
+											"type": "text"
+										},
+										{
+											"key": "numberOfRepayments",
+											"value": "12",
+											"type": "text"
+										},
+										{
+											"key": "repaymentEvery",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "repaymentFrequencyType",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "interestRatePerPeriod",
+											"value": "1.6",
+											"type": "text"
+										},
+										{
+											"key": "amortizationType",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "interestType",
+											"value": "0",
+											"type": "text"
+										},
+										{
+											"key": "interestCalculationPeriodType",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "transactionProcessingStrategyId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "expectedDisbursementDate",
+											"value": "10 July 2022",
+											"type": "text"
+										},
+										{
+											"key": "submittedOnDate",
+											"value": "26 Jun 2022",
+											"type": "text"
+										},
+										{
+											"key": "linkAccountId",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "maxOutstandingLoanBalance",
+											"value": "35000",
+											"type": "text"
+										},
+										{
+											"key": "daysInYearType",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "disbursementData",
+											"value": "[\n    {\n      \"expectedDisbursementDate\": \"10 July 2022\",\n      \"principal\": 900,\n      \"approvedPrincipal\": 900\n    }\n  ]",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Approve Loan Application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIHBob25lIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNjU2NDQ3Mjc1LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwiZXhwIjoxNjU2NTMzNjc1LCJpYXQiOjE2NTY0NDcyNzUsInZlcnNpb24iOjIsImp0aSI6IjllZDMzNmU0LTU3MjItNDBlMi04OGU2LWVkMmRkMjc2NGRmOCIsImNsaWVudF9pZCI6IjFkZW9rNjFhbDFjdGJzb2dmb2IyOGdlZjFxIiwidXNlcm5hbWUiOiJndWwucGNyQGdtYWlsLmNvbSJ9.SRYrHaS0EB4Ca1mt4G050YaCWBpsqXZC6004fkq12Xkh_xpxijwRM6cdVYARTxSv2LpPhacylbPuGgvwHbFfGzd9Lwhgr2iM5ga62Dnb7xSw_6DEOM476d7UR6_sBQpnfZP1TSFKYhyqtSOLHCbFR2XRH1C1KmLuGtldzol405hG0MOIKeToKOmIQRjBwrjEGl6GtCxhtGnNEGT0LexKuooJoUzzJj-BHyROQA4CZ6VDxYSufTSEafcB-X6_Y5-7a20zLjx9PpaxgVNUP9xRcBi_XsCewdQcVt7STbOTCJjyIdBclLieDmUq-8LvOXhjKb-uKrM3rFoMOByV6VUcWw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "ddMMMMyyyy",
+											"type": "text"
+										},
+										{
+											"key": "approvedOnDate",
+											"value": "26June2022",
+											"type": "text"
+										},
+										{
+											"key": "expectedDisbursementDate",
+											"value": "22September2022",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "Loanapprovalnote",
+											"type": "text"
+										},
+										{
+											"key": "disbursementData",
+											"value": "[{ \"id\":226, \"principal\":5, \"expectedDisbursementDate\":\"20 September 2011\"}]",
+											"type": "text"
+										},
+										{
+											"key": "loan_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/approve",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										"approve"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reject Loan Application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "ddMMMMyyyy",
+											"type": "text"
+										},
+										{
+											"key": "rejectedOnDate",
+											"value": "26June2022",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "Loanapprovalnote",
+											"type": "text"
+										},
+										{
+											"key": "loan_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/reject",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										"reject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disburse Loan",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "dateFormat",
+											"value": "ddMMMMyyyy",
+											"type": "text"
+										},
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "actualDisbursementDate",
+											"value": "26June2022",
+											"type": "text"
+										},
+										{
+											"key": "paymentTypeId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "accountNumber",
+											"value": "accno123",
+											"type": "text"
+										},
+										{
+											"key": "checkNumber",
+											"value": "chec123",
+											"type": "text"
+										},
+										{
+											"key": "routingCode",
+											"value": "rou123",
+											"type": "text"
+										},
+										{
+											"key": "receiptNumber",
+											"value": "rec123",
+											"type": "text"
+										},
+										{
+											"key": "bankNumber",
+											"value": "ban123",
+											"type": "text"
+										},
+										{
+											"key": "loan_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/disburse",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										"disburse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disburse Loan To Savings Account",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "dateFormat",
+											"value": "ddMMMMyyyy",
+											"type": "text"
+										},
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "actualDisbursementDate",
+											"value": "26June2022",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "loan_id",
+											"value": "7",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/loan/disburse-to-savings-account",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"loan",
+										"disburse-to-savings-account"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SAVINGS",
+					"item": [
+						{
+							"name": "List savings applications/accounts",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "pDj6pLyAtr2w9ulYOuZJy6fVsKxaO6Gu5kt7R0RH",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-API-KEY",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Submit new savings application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "clientId",
+											"value": "46",
+											"type": "text"
+										},
+										{
+											"key": "productId",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "submittedOnDate",
+											"value": "26 June 2022",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Approve savings application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "approvedOnDate",
+											"value": "26 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "savings_id",
+											"value": "27",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings/approve",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings",
+										"approve"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reject savings application",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "rejectedOnDate",
+											"value": "26 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "savings_id",
+											"value": "25",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings/reject",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings",
+										"reject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Activate a savings account",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "activatedOnDate",
+											"value": "26 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "savings_id",
+											"value": "27",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings/activate",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings",
+										"activate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Close a savings account",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJraWQiOiJ5MTV1SXNYUUlseUl0T2tab0dENDFnVlRBWEI1WUVZSjh4WVFaRmJHTXdjPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI5NWNlM2Q0YS03ZjkxLTQ4ZjEtYjI1NS1hNTdmNmY3MGFlMzkiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTIuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTJfbzd2RmI0OTNGIiwidmVyc2lvbiI6MiwiY2xpZW50X2lkIjoiMWRlb2s2MWFsMWN0YnNvZ2ZvYjI4Z2VmMXEiLCJldmVudF9pZCI6IjBlYTkyNDk1LTUzNjAtNDNkMi1hZTdjLTM4NjBhNWFmMGY4NyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4gcGhvbmUgb3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhdXRoX3RpbWUiOjE2NTYyMjczMTUsImV4cCI6MTY1NjMxMzcxNSwiaWF0IjoxNjU2MjI3MzE1LCJqdGkiOiI1NjdhYjc2OC0xODk3LTQzN2MtOTI0Ny0wZTFlYTJlZTVjZTUiLCJ1c2VybmFtZSI6Imd1bC5wY3JAZ21haWwuY29tIn0.ZflBB7RsDQ4NLMdY6GBhkSAtg5H19YlDCI_PqgCeeRQcEeIB3xpARC-tv96Ioy7-u0gsFWyTLjYg7kg_WwP9qzzfZTrvUBQTV-gITnvOT8cONYRV2uJekOatB_t6zb5O9rKOi_ItedQO8vNu_P6O1OpAmSqJ4IL-dXAxsy-GJuy4eRIDl_VZaE1iZkTiZnVh8LGZlbt8WTt9Yge4N0HVQ5vPDtiSEaIHDxI-gmjg5nxkoouR629dwjLWarXOsZ_c805TBj5Cs2FW7uc2UeVxIodV3x3jrr3cJVHvuuRBlNvOdrp_RxUkknVIsaRtmCjsJBInRbhc2Kyz1HBkjvcsnw",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "locale",
+											"value": "en",
+											"type": "text"
+										},
+										{
+											"key": "dateFormat",
+											"value": "dd MMMM yyyy",
+											"type": "text"
+										},
+										{
+											"key": "closedOnDate",
+											"value": "26 June 2022",
+											"type": "text"
+										},
+										{
+											"key": "savings_id",
+											"value": "27",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{FINERACT_LIVE_AWS}}/api/savings/close",
+									"host": [
+										"{{FINERACT_LIVE_AWS}}"
+									],
+									"path": [
+										"api",
+										"savings",
+										"close"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "List Data Tables",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "Tbr11dui8g9XnQ3qLsO2B5X7wtU6sAEG6UlTIsdh",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-KEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINERACT_LIVE_AWS}}/api/datatables",
+							"host": [
+								"{{FINERACT_LIVE_AWS}}"
+							],
+							"path": [
+								"api",
+								"datatables"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "FINERACT_LIVE_AWS",
+			"value": "http://3.26.188.234:3001"
+		}
+	]
+}

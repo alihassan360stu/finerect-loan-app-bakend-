@@ -1,0 +1,11 @@
+[0mPOST /api/admin/dashboard [32m200 [0m671.051 ms - 576[0m
+[0mPOST /api/admin/allusers [32m200 [0m36.813 ms - 318[0m
+[0mPOST /api/admin/allerrors [32m200 [0m7.453 ms - 282[0m
+[0mPOST /api/admin/dashboard [32m200 [0m8.061 ms - 576[0m
+[0mPOST /api/admin/allusers [32m200 [0m3.057 ms - 318[0m
+[0mGET / [36m304 [0m2478.197 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.524 ms - -[0m
+[0mGET / [36m304 [0m25.048 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.613 ms - -[0m
+[0mPOST /api/admin/dashboard [32m200 [0m11.760 ms - 576[0m
+[0mPOST /api/admin/allusers [32m200 [0m3.682 ms - 318[0m
